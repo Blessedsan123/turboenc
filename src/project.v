@@ -102,7 +102,7 @@ module turbo_encoder (
     reg [3:0] shift_reg1, shift_reg2;
     
     // Interleaver (simplified - fixed pattern for 8-bit block)
-    reg [7:0] interleaver_pattern = 8'b01010101 // Simple pattern
+    reg [7:0] interleaver_pattern = 8'b01010101; // Simple pattern
     reg [2:0] bit_counter;
     reg [7:0] input_buffer;
     reg encoding_active;
